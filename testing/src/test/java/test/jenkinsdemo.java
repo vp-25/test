@@ -1,7 +1,7 @@
 package test;
 
 public class jenkinsdemo {
-	//hiii trigger
+	//hiii triggerr
 	public static void main(String[]args) {
 		int a=10;
 		int b=20;
