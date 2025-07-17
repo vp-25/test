@@ -1,7 +1,7 @@
 package test;
 
 public class jenkinsdemo {
-	
+	//hiii trigger
 	public static void main(String[]args) {
 		int a=10;
 		int b=20;
@@ -14,7 +14,6 @@ public class jenkinsdemo {
 		else {
 			System.out.println("good bye ");
 		}
-		//System.out.println("bye");
 	}
 
 }
