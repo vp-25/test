@@ -14,6 +14,7 @@ public class jenkinsdemo {
 		else {
 			System.out.println("good bye ");
 		}
+		//System.out.println("bye");
 	}
 
 }
