@@ -4,15 +4,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.Test;
 
 public class jenkinsdemo {
 
     static WebDriver driver;
     static WebDriver sdriver;
 
-    public static void main(String[] args) {
-
-        String BROWSER = System.getProperty("browser");
+    @Test
+    public void browserTest() {
+        String BROWSER = System.getProperty("browser", "chrome"); // default to chrome
 
         if (BROWSER.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
@@ -25,7 +26,7 @@ public class jenkinsdemo {
             return;
         }
 
-        System.out.println("Browser Launching...");
+        System.out.println("✅ Browser Launched: " + BROWSER);
         sdriver = driver;
 
         int a = 10;
